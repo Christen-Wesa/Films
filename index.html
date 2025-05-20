@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>Films</title>
+        <link rel="icon" href="Images/logo.png">
+        <link rel="stylesheet" href="Css/bootstrap.min.css">
+        <link rel="stylesheet" href="Css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+      </head>
+    
+    <body class="bg-dark"> 
+        
+
+        <!--Start Navbar-->
+        <div class="navbar position-fixed top-0 bottom-0 p-0">
+            <div class="hiddenNavbar position-relative bg-black text-white p-4 h-100 d-flex flex-column justify-content-between">
+                <div class="list pt-4">
+                    <ul class="list-unstyled">
+                        <li class="nowPlaying">Now playing</li>
+                        <li class="Popular">Popular</li>
+                        <li class="topRated">Top Rated</li>
+                        <li class="trending">Trending</li>
+                        <li class="upcoming">Upcoming</li>
+                        <a href="#contactUs" class="text-decoration-none text-white"><li class="contactUs">Contact Us</li></a>
+                    </ul>
+                </div>
+                <div class="icons top-100 sticky-bottom">
+                    <i class="fa-brands fa-facebook-f me-2"></i>
+                    <i class="fa-brands fa-twitter me-2"></i>
+                    <i class="fa-solid fa-globe"></i>
+                    <p class="mt-2 secondColor">Copyright Â© 2019 All Rights Reserved.</p>
+                </div>
+                
+            </div>
+
+            <div class="visibleNavbar position-relative h-100 bg-white d-flex flex-column align-items-center justify-content-between">
+                <div class="logoImg pt-3 text-center">
+                    <img src="Images/logo.png" alt="" class="w-50">
+                </div>
+                <div class="menuIcons">
+                    <i class="fa-solid fa-bars fa-2x menu"></i>
+                    <i class="fa-solid fa-xmark fa-3x close"></i>
+                </div>
+                <div class="socialIcons d-flex flex-column pb-3">
+                    <i class="fa-solid fa-globe mb-2"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+
+            </div>
+        </div>
+        <!--End Of navbar-->
+
+        <!--Start Search Section-->
+        <div class="container w-75 py-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <input class="form-control w-100 p-2 text-white" id="wordSearch" type="text" placeholder="Get Movie by Word...">
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control w-100 p-2 text-white" maxlength="1" id="letterSearch" type="text" placeholder="Search...">
+                </div>
+            </div>
+        </div>
+        <!--End Of Search Section-->
+
+        <!--Start Data Show-->
+        <div class="container-fluid px-4 pt-5">
+            <div class="row dataShow" id="dataShow">
+                
+            </div>
+        </div>
+        <!--End Of Data Show-->
+
+        <!--Start Contact Us-->
+        <div class="container px-5 pt-5 my-5 text-white contact" id="contactUs">
+            <h2 class="pb-3">ContacUs...</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <input class="form-control w-100 p-2 fs-5 text-white" type="text" placeholder="Enter Your Name" id="nameInput">
+                    <p class="alertColor nameAlert p-3 text-center text-dark fs-5">Your Name is not Valid</p>
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control w-100 p-2 fs-5 text-white" type="email" placeholder="Enter Email" id="mailInput">
+                    <p class="alertColor mailAlert p-3 text-center text-dark fs-5">Enter valid Email</p>
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control w-100 p-2 fs-5 text-white" type="text" placeholder="Enter Phone" id="phoneInput">
+                    <p class="alertColor phoneAlert p-3 text-center text-dark fs-5">Enter valid Phone</p>
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control w-100 p-2 fs-5 text-white" type="text" placeholder="Enter Age" id="ageInput">
+                    <p class="alertColor ageAlert p-3 text-center text-dark fs-5">Enter valid Age</p>
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control w-100 p-2 fs-5 text-white" type="password" placeholder="Enter Password" id="passInput">
+                    <p class="alertColor passAlert p-3 text-center text-dark fs-5">entre valid password *Minimum eight characters, at least one letter and one number:*</p>
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control w-100 p-2 fs-5 text-white" type="password" placeholder="Enter RePassword" id="repassInput">
+                    <p class="alertColor repassAlert p-3 text-center text-dark fs-5">Enter valid Repassword</p>
+
+                </div>
+            </div>
+            <button disabled class="btn btn-outline-danger my-4 p-2" type="submit" id="submitBtn">Submit</button>
+        </div>
+        <!--End Of Contact Us-->
+
+
+
+        <script src="JS/jquery-3.6.3.min.js"></script>
+        <script src="JS/bootstrap.bundle.min.js"></script>
+        <script src="JS/index.js"></script>    
+    </body>
+</html>
+
+
+
