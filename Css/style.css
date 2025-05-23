@@ -23,6 +23,7 @@ body {
 
 /*Start Navbar*/
 .navbar {
+  height: 100vh;
 width: 20%;
 left: 0;
 top: 0;
@@ -86,11 +87,12 @@ z-index: 9999;
 /*End Of Search Section*/
 
 /*Start DataShow*/
-.dataShow{
-  z-index: 0;
+.dataShow {
+  position: relative;
 }
 
 .dataShow .overLay {
+  position: absolute;
   width: 100%;
   height: 0;
   top: 100%;
